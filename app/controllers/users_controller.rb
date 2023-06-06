@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+
   def show
     @user = User.find_by({ "id" => params["id"] })
   end
@@ -16,4 +17,5 @@ class UsersController < ApplicationController
     session["user_id"] = @user["id"]
     redirect_to "/places"
   end
+  
 end
