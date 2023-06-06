@@ -1,3 +1,6 @@
+<div class="container">
+<% if @current_user%>
+
 <h1>Places</h1>
 
 <ul>
@@ -9,3 +12,8 @@
 <p>
   <a href="/places/new">New place</a>
 </p>
+
+<% else %>
+<p>You must be logged in to see this page.</p>
+<% end %>
+</div>
